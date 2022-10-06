@@ -1,0 +1,135 @@
+/*Arrays*/
+frutas = ["pera", "manzana", "banana']
+document.write(frutas)
+document.write(frutas[0]) = pera
+
+/*Arrays Asocialtivos/*
+pc = {
+    nombre: "DaltoPC",
+    procesador: "intel core i7",
+    ram: "16GB",
+    disco : "1TB"
+}
+document.write(pc["nombre"]) = DaltoPC
+
+/*Bucles e Iteracion */
+numero = 0
+while (numero < 10) {
+    numero ++;
+    document.write(numero)
+    if(numero == 8){
+        break; // finaliza el programa
+    }
+}
+
+do {
+    numero ++;
+    document.write(numero)
+}
+while (numero < 10) {}
+
+for(let i = 0; i < 6; i++){
+    document.write(i)
+    if(i==3){
+        continue; // 1245
+    }
+}
+/* for in --- of */
+let animales = ["gato", "perro","leon"];
+for(animal in animales){
+    document.write(animal); // 0 1 2 //indece
+    document.write(animales[animal]);// gato perro leon
+}
+
+for(animal of animales){
+    document.write(animal);// gato perro leon // valor
+}
+
+/* funciones */
+function saludar() {
+    respuesta = prompt("Hola como fue tu dia")
+    if (respuesta == "bien") {
+        alert("me alegro")
+    } else {alert("una pena")}
+}
+
+function hello(){
+    return "hello";
+}
+ let hello = hello();
+ document.write(hello);
+
+ //parametros
+ function suma(num1, num2){
+    let res = num1 + num2
+    return res
+ }
+
+ let resul = suma(20, 25)
+ document.write(resul)    // 45
+
+ function saludar(nombre) {
+    let frase = `Hola ${nombre} como estas`
+    document.write(frase)
+ }
+ saludar("julia") // Hola julia como estas
+
+ /*escope siempre usar let dentro de una funcion para que la 
+ variable sea regional y no global**/
+
+ /* con flechas **/
+
+
+ function saludar(nombre) {
+    document.write(`Hola ${nombre} como estas`)
+ }
+
+ const saludar = function(nombre) {
+    document.write(`Hola ${nombre} como estas`)
+ }
+
+ const saludar = (nombre) =>{
+    document.write(`Hola ${nombre} como estas`)
+ }
+ const saludar = nombre => document.write(`Hola ${nombre} como estas`);
+
+ saludar("julia") // Hola julia como estas
+ saludar("mabel") // Hola julia como estas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
